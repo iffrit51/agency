@@ -260,6 +260,15 @@ body {
   z-index: 1;
 }
 
+.card-sombre{
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Effet au survol pour agrandir légèrement la carte */
+.service-card:hover {
+  transform: scale(1.05);
+}
+
 .service-card h3, 
 .service-card p, 
 .service-card .divider {
@@ -288,17 +297,14 @@ body {
 
 /* Styles spécifiques à chaque bloc */
 .analyse {
-  background-color: #0a4b5f; /* Bleu foncé */
   background-image: url('../public/images/handG176868E991920Jpg.jpg'); /* Optionnel : image de fond */
 }
 
 .connect {
-  background-color: #205d67; /* Bleu-vert */
   background-image: url('../public/images/headerBg5Jpg.jpg'); /* Optionnel : image de fond */
 }
 
 .develop {
-  background-color: #1c1f21; /* Gris très foncé */
   background-image: url('../public/images/headerBg6Jpg.jpg'); /* Optionnel : image de fond */
 }
 

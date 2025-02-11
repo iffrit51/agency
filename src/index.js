@@ -27,7 +27,7 @@ const HockeyCareerPage = () => {
       </section>
 
       <section className="services">
-        <div className="service-card analyse">
+        <div className="service-card analyse card-sombre">
           <h3>Analyse</h3>
           <p>
             Thoroughly evaluate the player's skills, performance, and potential. This includes analyzing statistics, game footage,
@@ -36,7 +36,7 @@ const HockeyCareerPage = () => {
           </p>
         </div>
 
-        <div className="service-card connect">
+        <div className="service-card connect card-sombre">
           <h3>Connect</h3>
           <p>
             Build and maintain a strong network with coaches, scouts, clubs, and other agents. Creating trusted relationships helps
@@ -44,7 +44,7 @@ const HockeyCareerPage = () => {
           </p>
         </div>
 
-        <div className="service-card develop">
+        <div className="service-card develop card-sombre">
           <h3>Develop</h3>
           <p>
             Support the player's overall development, both on and off the ice. This includes career management, mental coaching,
