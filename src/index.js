@@ -5,6 +5,21 @@ import './index.css';
 const HockeyCareerPage = () => {
   return (
     <div className="container">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <img src="../images/bcAgencyLogoJpg.jpg" alt="BC Agency Logo"/>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#players">PLAYERS</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+          </ul>
+        </div>
+      </nav>
       <header className="header">
         <div className="overlay">
           <h1>Building Careers, Not Just Contracts</h1>
@@ -57,58 +72,92 @@ const HockeyCareerPage = () => {
       </section>
 
       <section class="carousel">
-      <div class="carousel-track">
-        <div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
-              <div class="player-info">
-                <h3>Ludovic Guitton</h3>
-                <p>Pitcher / 3ème base / DH</p>
+        <div class="carousel-track">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                <div class="player-info">
+                  <h3>Ludovic Guitton</h3>
+                  <p>Pitcher / 3ème base / DH</p>
+                </div>
+              </div>
+              <div class="card-back">
+                <h3>Stats</h3>
+                <p>ERA: 2.45</p>
+                <p>Strikeouts: 150</p>
+                <p>Matches Played: 20</p>
               </div>
             </div>
-            <div class="card-back">
-              <h3>Stats</h3>
-              <p>ERA: 2.45</p>
-              <p>Strikeouts: 150</p>
-              <p>Matches Played: 20</p>
-            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
-              <div class="player-info">
-                <h3>Ludovic Guitton</h3>
-                <p>Pitcher / 3ème base / DH</p>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                <div class="player-info">
+                  <h3>Ludovic Guitton</h3>
+                  <p>Pitcher / 3ème base / DH</p>
+                </div>
+              </div>
+              <div class="card-back">
+                <h3>Stats</h3>
+                <p>ERA: 2.45</p>
+                <p>Strikeouts: 150</p>
+                <p>Matches Played: 20</p>
               </div>
             </div>
-            <div class="card-back">
-              <h3>Stats</h3>
-              <p>ERA: 2.45</p>
-              <p>Strikeouts: 150</p>
-              <p>Matches Played: 20</p>
-            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
-              <div class="player-info">
-                <h3>Ludovic Guitton</h3>
-                <p>Pitcher / 3ème base / DH</p>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                <div class="player-info">
+                  <h3>Ludovic Guitton</h3>
+                  <p>Pitcher / 3ème base / DH</p>
+                </div>
+              </div>
+              <div class="card-back">
+                <h3>Stats</h3>
+                <p>ERA: 2.45</p>
+                <p>Strikeouts: 150</p>
+                <p>Matches Played: 20</p>
               </div>
             </div>
-            <div class="card-back">
-              <h3>Stats</h3>
-              <p>ERA: 2.45</p>
-              <p>Strikeouts: 150</p>
-              <p>Matches Played: 20</p>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                <div class="player-info">
+                  <h3>Ludovic Guitton</h3>
+                  <p>Pitcher / 3ème base / DH</p>
+                </div>
+              </div>
+              <div class="card-back">
+                <h3>Stats</h3>
+                <p>ERA: 2.45</p>
+                <p>Strikeouts: 150</p>
+                <p>Matches Played: 20</p>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                <div class="player-info">
+                  <h3>Ludovic Guitton</h3>
+                  <p>Pitcher / 3ème base / DH</p>
+                </div>
+              </div>
+              <div class="card-back">
+                <h3>Stats</h3>
+                <p>ERA: 2.45</p>
+                <p>Strikeouts: 150</p>
+                <p>Matches Played: 20</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

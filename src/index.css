@@ -345,12 +345,6 @@ body {
   justify-content: center; /* Centre les cartes si elles ne prennent pas toute la largeur */
 }
 
-.card {
-  width: 220px;
-  height: 320px;
-  perspective: 1000px;
-}
-
 .card-inner {
   position: relative;
   width: 100%;
@@ -411,7 +405,7 @@ body {
 .card-back p {
   margin: 5px 0;
   font-size: 1em;
-}
+} */
 
 .carousel {
   width: 100%;
@@ -423,7 +417,7 @@ body {
 .carousel-track {
   display: flex;
   gap: 20px;
-  animation: scroll 15s linear infinite; /* Animation continue */
+  animation: scroll 10s linear infinite;
 }
 
 .card {
@@ -452,13 +446,60 @@ body {
   padding: 10px;
 }
 
+/* Style général de la navbar */
+.navbar {
+  width: 100%;
+  background-color: white; /* Fond blanc */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre sous la navbar */
+  position: fixed; /* Fixe la navbar en haut même au scroll */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Assure que la navbar est toujours au-dessus du contenu */
+  padding: 10px 50px; /* Espacement intérieur */
+}
+
+/* Conteneur de la navbar pour aligner le logo et les liens */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Espace entre le logo et les liens */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; /* Centre la navbar */
+}
+
+/* Logo */
+.logo img {
+  height: 60px; /* Ajuste la taille du logo */
+}
+
+/* Liens de navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* Espacement entre les liens */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #555; /* Couleur des liens */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Effet de transition pour le survol */
+}
+
+.nav-links li a:hover {
+  color: #000; /* Change la couleur au survol */
+}
+
 /* Animation du carrousel */
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-calc(220px * 5 + 100px)); /* 5 cartes + espaces */
+    transform: translateX(-calc(240px * 5)); /* 220px + 20px (gap) pour chaque carte */
   }
 }
 
