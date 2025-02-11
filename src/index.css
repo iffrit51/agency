@@ -10,7 +10,7 @@ body {
 
 .header {
   position: relative;
-  background: url('/public/images/photo15145117199F5849Dc16D0Jpg.jpg') no-repeat center center/cover;
+  background: url('../public/images/photo15145117199F5849Dc16D0Jpg.jpg');
   height: 100vh; /* Pleine hauteur de l'écran */
   color: white;
   display: flex;
@@ -277,6 +277,7 @@ body {
 .service-card p {
   font-size: 1rem;
   line-height: 1.6;
+  text-align: left;
 }
 
 .services {
