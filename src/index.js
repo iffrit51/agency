@@ -51,7 +51,7 @@ const HockeyCareerPage = () => {
       <section className="call-to-action">
         <h2>Work with us.</h2>
         <p>Let's go for the game</p>
-        <a href="#">GET IN TOUCH</a>
+        <a href="#" className="cta-button">GET IN TOUCH</a>
       </section>
 
       <footer className="footer">
