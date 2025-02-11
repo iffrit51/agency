@@ -56,10 +56,62 @@ const HockeyCareerPage = () => {
         </div>
       </section>
 
-
-      <section>
-        <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+      <section class="carousel">
+      <div class="carousel-track">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+              <div class="player-info">
+                <h3>Ludovic Guitton</h3>
+                <p>Pitcher / 3ème base / DH</p>
+              </div>
+            </div>
+            <div class="card-back">
+              <h3>Stats</h3>
+              <p>ERA: 2.45</p>
+              <p>Strikeouts: 150</p>
+              <p>Matches Played: 20</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+              <div class="player-info">
+                <h3>Ludovic Guitton</h3>
+                <p>Pitcher / 3ème base / DH</p>
+              </div>
+            </div>
+            <div class="card-back">
+              <h3>Stats</h3>
+              <p>ERA: 2.45</p>
+              <p>Strikeouts: 150</p>
+              <p>Matches Played: 20</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+              <div class="player-info">
+                <h3>Ludovic Guitton</h3>
+                <p>Pitcher / 3ème base / DH</p>
+              </div>
+            </div>
+            <div class="card-back">
+              <h3>Stats</h3>
+              <p>ERA: 2.45</p>
+              <p>Strikeouts: 150</p>
+              <p>Matches Played: 20</p>
+            </div>
+          </div>
+        </div>
+        </div>
       </section>
+
 
       <section className="footer-banner">
         <img src="../images/dallE20250205141532ASetOfIceHockeyEquipmentPlacedOnTheGroundIncludingAPairOfIceHockeySkatesAHockeyStickAndAHelmetTheSkatesAreSlightlyWornJpeg.jpg" alt="Hockey Skates" />
