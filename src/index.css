@@ -109,16 +109,141 @@ body {
 }
 
 .footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  padding: 40px 80px;
+  color: #333;
+  font-family: Arial, sans-serif;
 }
 
-.footer a {
-  color: #007BFF;
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.footer-section p, 
+.footer-section a, 
+.footer-section li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
   text-decoration: none;
-  margin: 0 15px;
+}
+
+.footer-section a:hover {
+  color: #007BFF;
+  text-decoration: underline;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    margin-bottom: 30px;
+  }
+}
+
+.call-to-action {
+  background-color: #2d2f30;  /* Couleur de fond sombre */
+  color: white;               /* Couleur du texte */
+  text-align: center;         /* Centrage du texte */
+  padding: 80px 20px;         /* Espace autour du contenu */
+}
+
+.call-to-action h2 {
+  font-size: 2.5rem;          /* Taille du titre */
+  font-weight: bold;          /* Titre en gras */
+  margin-bottom: 20px;
+}
+
+.call-to-action p {
+  font-size: 1.2rem;          /* Taille du texte sous le titre */
+  margin-bottom: 30px;
+}
+
+/* Bouton stylisé */
+.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: white;
+  color: #2d2f30;
+  font-weight: bold;
+  border-radius: 40px;        /* Coins bien arrondis */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+  background-color: #2d2f30;  /* Fond sombre au survol */
+  color: white;
 }
 
 
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 100px;
+  background-color: #f9f9f9;
+}
+
+.about-images {
+  position: relative;
+  display: flex;
+}
+
+.about-images .img-1 {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-images .img-2 {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  position: absolute;
+  top: 50px;
+  left: 150px; /* Décalage pour l'effet de chevauchement */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+  max-width: 500px;
+  margin-left: 320px; /* Espace pour les images à gauche */
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
