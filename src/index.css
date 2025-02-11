@@ -204,14 +204,14 @@ body {
 }
 
 .about-images .img-1 {
-  width: 250px;
+  width: 600px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-images .img-2 {
-  width: 250px;
+  width: 600px;
   height: auto;
   border-radius: 10px;
   position: absolute;
