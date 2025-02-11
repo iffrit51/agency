@@ -27,19 +27,35 @@ const HockeyCareerPage = () => {
       </section>
 
       <section className="services">
-        <div>
-          <h3>Analyze</h3>
-          <p>We provide detailed analytics to enhance performance and career growth.</p>
+        <div className="service-card analyse">
+          <h3>Analyse</h3>
+          <p>
+            Thoroughly evaluate the player's skills, performance, and potential. This includes analyzing statistics, game footage,
+            physical condition, and mental aspects to identify strengths and areas for improvement. The goal is to strategically
+            position the player in the market.
+          </p>
         </div>
-        <div>
+
+        <div className="service-card connect">
           <h3>Connect</h3>
-          <p>Building strong networks to open up opportunities for our clients.</p>
+          <p>
+            Build and maintain a strong network with coaches, scouts, clubs, and other agents. Creating trusted relationships helps
+            uncover contract opportunities, tryouts, and key partnerships to advance the player's career.
+          </p>
         </div>
-        <div>
+
+        <div className="service-card develop">
           <h3>Develop</h3>
-          <p>Focusing on continuous development to achieve long-term success.</p>
+          <p>
+            Support the player's overall development, both on and off the ice. This includes career management, mental coaching,
+            contract negotiations, and personal branding to maximize opportunities in sports and beyond.
+          </p>
+          <p>
+            This approach ensures comprehensive support, from talent discovery to professional growth.
+          </p>
         </div>
       </section>
+
 
       <section>
         <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
