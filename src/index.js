@@ -1,6 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './index.css';
+import App from './App';  // Utilise App pour gérer les routes
 
 const HockeyCareerPage = () => {
   return (
@@ -8,15 +10,13 @@ const HockeyCareerPage = () => {
       <nav class="navbar">
         <div class="navbar-container">
           <div class="logo">
-            <img src="../images/bcAgencyLogoJpg.jpg" alt="BC Agency Logo"/>
+            <img src="../images/bcAgencyLogoJpg.jpg" alt="BC Agency Logo" />
           </div>
-
-          <ul class="nav-links">
-            <li><a href="#about">ABOUT US</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#players">PLAYERS</a></li>
-            <li><a href="#blog">BLOG</a></li>
-            <li><a href="#contact">CONTACT US</a></li>
+          <ul className="nav-links">
+            <li><Link to="/about">ABOUT US</Link></li>
+            <li><Link to="/services">SERVICES</Link></li>
+            <li><Link to="/players">PLAYERS</Link></li>
+            <li><Link to="/contact">CONTACT US</Link></li>
           </ul>
         </div>
       </nav>
@@ -202,4 +202,11 @@ const HockeyCareerPage = () => {
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<HockeyCareerPage />);
+root.render(
+  <React.StrictMode>
+    <Router>
+      <App />
+    </Router>
+  </React.StrictMode>
+);
+
