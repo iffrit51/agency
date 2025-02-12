@@ -10,7 +10,9 @@ const HockeyCareerPage = () => {
       <nav class="navbar">
         <div class="navbar-container">
           <div class="logo">
-            <img src="../images/bcAgencyLogoJpg.jpg" alt="BC Agency Logo" />
+            <Link to="/">
+              <img src="../images/bcAgencyLogoJpg.jpg" alt="BC Agency Logo" />
+            </Link>
           </div>
           <ul className="nav-links">
             <li><Link to="/about">ABOUT US</Link></li>
