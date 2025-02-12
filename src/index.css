@@ -1,4 +1,4 @@
-body {
+ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -14,14 +14,11 @@ body {
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  /* Pleine hauteur de l'écran */
   color: white;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  /* Aligner le contenu à droite */
   padding-right: 50px;
-  /* Espacement depuis le bord droit */
 }
 
 .header::before {
@@ -31,7 +28,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-
   z-index: 1;
 }
 
@@ -40,12 +36,10 @@ body {
   z-index: 2;
   max-width: 500px;
   background: rgba(0, 0, 0, 0.5);
-  /* Fond sombre transparent pour le texte */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   text-align: left;
-  /* Alignement du texte à gauche */
 }
 
 .header h1 {
@@ -61,14 +55,12 @@ body {
   margin-bottom: 20px;
 }
 
-/* Bouton stylisé */
 .button {
   padding: 12px 30px;
   background-color: white;
   color: black;
   text-decoration: none;
   border-radius: 30px;
-  /* Bouton bien arrondi */
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s;
   display: inline-block;
@@ -159,7 +151,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -173,30 +164,22 @@ body {
 
 .call-to-action {
   background-color: #2d2f30;
-  /* Couleur de fond sombre */
   color: white;
-  /* Couleur du texte */
   text-align: center;
-  /* Centrage du texte */
   padding: 80px 20px;
-  /* Espace autour du contenu */
 }
 
 .call-to-action h2 {
   font-size: 2.5rem;
-  /* Taille du titre */
   font-weight: bold;
-  /* Titre en gras */
   margin-bottom: 20px;
 }
 
 .call-to-action p {
   font-size: 1.2rem;
-  /* Taille du texte sous le titre */
   margin-bottom: 30px;
 }
 
-/* Bouton stylisé */
 .cta-button {
   display: inline-block;
   padding: 15px 40px;
@@ -204,7 +187,6 @@ body {
   color: #2d2f30;
   font-weight: bold;
   border-radius: 40px;
-  /* Coins bien arrondis */
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -237,14 +219,12 @@ body {
   position: absolute;
   top: 50px;
   left: 150px;
-  /* Décalage pour l'effet de chevauchement */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-text {
   max-width: 500px;
   margin-left: 320px;
-  /* Espace pour les images à gauche */
 }
 
 .about-text h2 {
@@ -261,7 +241,6 @@ body {
 
 .service-card {
   flex: 1;
-  /* Chaque carte prend une taille égale */
   padding: 30px;
   border-radius: 15px;
   background-size: cover;
@@ -270,10 +249,8 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   min-height: 400px;
-  /* Hauteur minimale pour uniformiser */
 }
 
-/* Ajout d'un overlay sombre pour améliorer la lisibilité */
 .service-card::before {
   content: '';
   position: absolute;
@@ -288,7 +265,6 @@ body {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Effet au survol pour agrandir légèrement la carte */
 .service-card:hover {
   transform: scale(1.05);
 }
@@ -298,7 +274,6 @@ body {
 .service-card .divider {
   position: relative;
   z-index: 2;
-  /* S'assurer que le texte est au-dessus de l'overlay */
 }
 
 .service-card h3 {
@@ -315,36 +290,33 @@ body {
 
 .services {
   display: flex;
-  /* Disposition en ligne */
   justify-content: space-between;
-  /* Espacement égal entre les blocs */
   gap: 20px;
-  /* Espace entre les blocs */
   padding: 40px 20px;
 }
 
-/* Styles spécifiques à chaque bloc */
+
 .analyse {
   background-image: url('/public/images/handG176868E991920Jpg.jpg');
-  /* Optionnel : image de fond */
+
 }
 
 .connect {
   background-image: url('/public/images/headerBg5Jpg.jpg');
-  /* Optionnel : image de fond */
+
 }
 
 .develop {
   background-image: url('/public/images/headerBg6Jpg.jpg');
-  /* Optionnel : image de fond */
+
 }
 
 .player-cards {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 3 cartes par ligne */
+  grid-template-columns: repeat(5, 1fr); 
   gap: 20px;
   padding: 20px;
-  justify-content: center; /* Centre les cartes si elles ne prennent pas toute la largeur */
+  justify-content: center; 
 }
 
 .card-inner {
@@ -411,9 +383,9 @@ body {
 
 .carousel {
   width: 100%;
-  overflow: hidden; /* Cache les cartes en dehors de la vue */
+  overflow: hidden; 
   padding: 20px;
-  background: #f5f5f5; /* Couleur de fond pour contraste */
+  background: #f5f5f5; 
 }
 
 .carousel-track {
@@ -423,7 +395,7 @@ body {
 }
 
 .card {
-  flex: 0 0 220px; /* Taille fixe pour chaque carte */
+  flex: 0 0 220px; 
   height: 320px;
   border-radius: 15px;
   overflow: hidden;
@@ -448,37 +420,37 @@ body {
   padding: 10px;
 }
 
-/* Style général de la navbar */
+
 .navbar {
   width: 100%;
-  background-color: white; /* Fond blanc */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre sous la navbar */
-  position: fixed; /* Fixe la navbar en haut même au scroll */
+  background-color: white; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  position: fixed; 
   top: 0;
   left: 0;
-  z-index: 1000; /* Assure que la navbar est toujours au-dessus du contenu */
-  padding: 10px 50px; /* Espacement intérieur */
+  z-index: 1000; 
+  padding: 10px 50px; 
 }
 
-/* Conteneur de la navbar pour aligner le logo et les liens */
+
 .navbar-container {
   display: flex;
-  justify-content: space-between; /* Espace entre le logo et les liens */
+  justify-content: space-between; 
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto; /* Centre la navbar */
+  margin: 0 auto; 
 }
 
-/* Logo */
+
 .logo img {
-  height: 60px; /* Ajuste la taille du logo */
+  height: 60px; 
 }
 
-/* Liens de navigation */
+
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 40px; /* Espacement entre les liens */
+  gap: 40px; 
   margin: 0;
   padding: 0;
 }
@@ -486,27 +458,27 @@ body {
 .nav-links li a {
   text-decoration: none;
   font-size: 1rem;
-  color: #555; /* Couleur des liens */
+  color: #555; 
   font-weight: bold;
-  transition: color 0.3s ease; /* Effet de transition pour le survol */
+  transition: color 0.3s ease; 
 }
 
 .nav-links li a:hover {
-  color: #000; /* Change la couleur au survol */
+  color: #000; 
 }
 
-/* Animation du carrousel */
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-calc(240px * 5)); /* 220px + 20px (gap) pour chaque carte */
+    transform: translateX(-calc(240px * 5)); 
   }
 }
 
 
-/* Responsive pour les petits écrans */
+
 @media (max-width: 768px) {
   .services {
     flex-direction: column;
@@ -519,9 +491,9 @@ body {
 
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Cacher le menu sur mobile par exemple */
+    display: none; 
   }
   .navbar {
     flex-direction: column;
   }
-}
+} 
