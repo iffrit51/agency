@@ -84,6 +84,7 @@
 .footer-banner img {
   max-width: 100%;
   border-radius: 10px;
+  height: auto;
   margin: 10px;
 }
 
@@ -203,23 +204,23 @@
 .about-images {
   position: relative;
   display: flex;
+  justify-content: center; /* Centrage des images */
+  flex-wrap: wrap; /* Permet aux images de passer à la ligne si nécessaire */
 }
 
-.about-images .img-1 {
-  width: 600px;
-  height: auto;
+.about-images .img-1,
+.about-images .img-2 {
+  width: 45%; /* Utilisation de pourcentages pour plus de flexibilité */
+  min-width: 300px; /* Taille minimale pour éviter que l'image ne devienne trop petite */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out; /* Transition douce pour les changements de taille */
 }
 
 .about-images .img-2 {
-  width: 600px;
-  height: auto;
-  border-radius: 10px;
   position: absolute;
-  top: 50px;
-  left: 150px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  top: 20%;
+  left: 45%;
 }
 
 .about-text {
@@ -242,6 +243,7 @@
 .service-card {
   flex: 1;
   padding: 30px;
+  min-width: 350px;
   border-radius: 15px;
   background-size: cover;
   background-position: center;
@@ -497,3 +499,18 @@
     flex-direction: column;
   }
 } 
+
+/* Media Queries pour les écrans plus petits */
+@media (max-width: 768px) {
+  .about-images {
+    flex-direction: column; /* Les images s'affichent en colonne sur petit écran */
+    align-items: center;
+  }
+
+  .about-images .img-1,
+  .about-images .img-2 {
+    width: 80%; /* Les images prennent plus de largeur sur petit écran */
+    position: static; /* Supprime le positionnement absolu pour l'empiler correctement */
+    margin-bottom: 20px; /* Espace entre les images */
+  }
+}
