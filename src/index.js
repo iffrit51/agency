@@ -11,7 +11,7 @@ const HockeyCareerPage = () => {
         <div class="navbar-container">
           <div class="logo">
             <Link to="/">
-              <img src="../images/bcAgencyLogoJpg.jpg" alt="BC Agency Logo" />
+              <img src="/images/bcAgencyLogoJpg.jpg" alt="BC Agency Logo" />
             </Link>
           </div>
           <ul className="nav-links">
@@ -78,7 +78,7 @@ const HockeyCareerPage = () => {
           <div class="card">
             <div class="card-inner">
               <div class="card-front">
-                <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                <img src="/images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
                 <div class="player-info">
                   <h3>Ludovic Guitton</h3>
                   <p>Pitcher / 3ème base / DH</p>
@@ -95,7 +95,7 @@ const HockeyCareerPage = () => {
           <div class="card">
             <div class="card-inner">
               <div class="card-front">
-                <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                <img src="/images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
                 <div class="player-info">
                   <h3>Ludovic Guitton</h3>
                   <p>Pitcher / 3ème base / DH</p>
@@ -112,7 +112,7 @@ const HockeyCareerPage = () => {
           <div class="card">
             <div class="card-inner">
               <div class="card-front">
-                <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                <img src="/images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
                 <div class="player-info">
                   <h3>Ludovic Guitton</h3>
                   <p>Pitcher / 3ème base / DH</p>
@@ -129,7 +129,7 @@ const HockeyCareerPage = () => {
           <div class="card">
             <div class="card-inner">
               <div class="card-front">
-                <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                <img src="/images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
                 <div class="player-info">
                   <h3>Ludovic Guitton</h3>
                   <p>Pitcher / 3ème base / DH</p>
@@ -146,7 +146,7 @@ const HockeyCareerPage = () => {
           <div class="card">
             <div class="card-inner">
               <div class="card-front">
-                <img src="../images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                <img src="/images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
                 <div class="player-info">
                   <h3>Ludovic Guitton</h3>
                   <p>Pitcher / 3ème base / DH</p>
@@ -165,7 +165,7 @@ const HockeyCareerPage = () => {
 
 
       <section className="footer-banner">
-        <img src="../images/dallE20250205141532ASetOfIceHockeyEquipmentPlacedOnTheGroundIncludingAPairOfIceHockeySkatesAHockeyStickAndAHelmetTheSkatesAreSlightlyWornJpeg.jpg" alt="Hockey Skates" />
+        <img src="/images/dallE20250205141532ASetOfIceHockeyEquipmentPlacedOnTheGroundIncludingAPairOfIceHockeySkatesAHockeyStickAndAHelmetTheSkatesAreSlightlyWornJpeg.jpg" alt="Hockey Skates" />
       </section>
       <section className="call-to-action">
         <h2>Work with us.</h2>

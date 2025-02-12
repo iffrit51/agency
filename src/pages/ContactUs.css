@@ -70,7 +70,8 @@ textarea {
 }
 
 .contact-info {
-    background: url('/public/images/writingPad32027471920Jpg.jpg') no-repeat center center;
+    background: url('/public/images/writingPad32027471920Jpg.jpg') no-repeat;
+    background-position: center center;
     background-size: cover;
     /* Déplace l'image vers la gauche */
     padding: 20px;

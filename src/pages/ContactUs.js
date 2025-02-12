@@ -14,9 +14,7 @@ const ContactUs = () => {
                 </p>
             </div>
 
-            {/* Section Formulaire et Informations */}
             <div className="contact-content">
-                {/* Formulaire */}
                 <form className="contact-form">
                     <div className="form-group">
                         <input type="text" placeholder="First name" required />
@@ -39,7 +37,6 @@ const ContactUs = () => {
                     <button type="submit" className="submit-button">Submit</button>
                 </form>
 
-                {/* Informations de contact */}
                 <div className="contact-info">
                     <h2>Address</h2>
                     <p>1234 Lorem Ipsum<br />Lorem Ipsum, GA 30308<br />1234567890<br />xyz@companyname.com</p>
