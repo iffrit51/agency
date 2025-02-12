@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './index.css';
-import App from './App';  // Utilise App pour gérer les routes
+import App from './App';
 
 const HockeyCareerPage = () => {
   return (
