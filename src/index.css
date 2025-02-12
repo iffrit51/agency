@@ -10,7 +10,7 @@ body {
 
 .header {
   position: relative;
-  background: url('../public/images/photo15145117199F5849Dc16D0Jpg.jpg') no-repeat center center/cover;
+  background: url('/public/images/photo15145117199F5849Dc16D0Jpg.jpg') no-repeat center center/cover;
   height: 100vh;
   /* Pleine hauteur de l'écran */
   color: white;
@@ -323,17 +323,17 @@ body {
 
 /* Styles spécifiques à chaque bloc */
 .analyse {
-  background-image: url('../public/images/handG176868E991920Jpg.jpg');
+  background-image: url('/public/images/handG176868E991920Jpg.jpg');
   /* Optionnel : image de fond */
 }
 
 .connect {
-  background-image: url('../public/images/headerBg5Jpg.jpg');
+  background-image: url('/public/images/headerBg5Jpg.jpg');
   /* Optionnel : image de fond */
 }
 
 .develop {
-  background-image: url('../public/images/headerBg6Jpg.jpg');
+  background-image: url('/public/images/headerBg6Jpg.jpg');
   /* Optionnel : image de fond */
 }
 
