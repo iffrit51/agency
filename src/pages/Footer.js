@@ -1,5 +1,10 @@
 import React from 'react';
 import './../index.css';
+import { Link } from 'react-router-dom';
+
+const handleClick = (event) => {
+    event.preventDefault();
+};
 
 const Footer = () => {
     return (
@@ -7,7 +12,7 @@ const Footer = () => {
             <section className="call-to-action">
                 <h2>Work with us.</h2>
                 <p>Let's go for the game</p>
-                <a href="#" className="cta-button">GET IN TOUCH</a>
+                <a href="#section" role="button" onClick={handleClick} className="cta-button">GET IN TOUCH</a>
             </section>
             <footer className="footer">
                 <div className="footer-section">
@@ -18,11 +23,10 @@ const Footer = () => {
                 <div className="footer-section">
                     <h3>Nav Links</h3>
                     <ul>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Players</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><Link to="/about">Services</Link></li>
+                        <li><Link to="/services">About us</Link></li>
+                        <li><Link to="/players">Players</Link></li>
+                        <li><Link to="/contact">Contact us</Link></li>
                     </ul>
                 </div>
 

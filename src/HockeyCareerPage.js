@@ -3,6 +3,10 @@ import './index.css';
 import Footer from './pages/Footer';
 import Header from './pages/Header';
 
+const handleClick = (event) => {
+    event.preventDefault();
+  };
+
 const HockeyCareerPage = () => {
     return (
         <div className="container">
@@ -11,7 +15,7 @@ const HockeyCareerPage = () => {
                 <div className="overlay">
                     <h1>Building Careers, Not Just Contracts</h1>
                     <h3>As leading hockey agents, we focus on helping players achieve their full potential both on and off the ice. From contract negotiations to career guidance, our team is dedicated to providing tailored solutions for every client. We connect players with top teams worldwide and ensure they stay at the top of their game.</h3>
-                    <a href="#" className="button">Get in Touch</a>
+                    <a href="#section" role="button" onClick={handleClick} className="button">Get in Touch</a>
                 </div>
             </header>
 
@@ -23,7 +27,7 @@ const HockeyCareerPage = () => {
                 <div className="about-text">
                     <h2>About us</h2>
                     <p>We specialize in placing players from less represented nationalities in the world of ice hockey.</p>
-                    <a href="#" className="button">READ MORE</a>
+                    <a href="#section" role="button" onClick={handleClick} className="button">READ MORE</a>
                 </div>
             </section>
 
@@ -62,7 +66,7 @@ const HockeyCareerPage = () => {
                     <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img src="/images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                                <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
                                 <div class="player-info">
                                     <h3>Ludovic Guitton</h3>
                                     <p>Pitcher / 3ème base / DH</p>
@@ -79,7 +83,7 @@ const HockeyCareerPage = () => {
                     <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img src="/images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                                <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
                                 <div class="player-info">
                                     <h3>Ludovic Guitton</h3>
                                     <p>Pitcher / 3ème base / DH</p>
@@ -96,7 +100,7 @@ const HockeyCareerPage = () => {
                     <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img src="/images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                                <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
                                 <div class="player-info">
                                     <h3>Ludovic Guitton</h3>
                                     <p>Pitcher / 3ème base / DH</p>
@@ -113,7 +117,7 @@ const HockeyCareerPage = () => {
                     <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img src="/images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                                <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
                                 <div class="player-info">
                                     <h3>Ludovic Guitton</h3>
                                     <p>Pitcher / 3ème base / DH</p>
@@ -130,7 +134,7 @@ const HockeyCareerPage = () => {
                     <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img src="/images/nikoSuoraniemiJpg.jpg" alt="Player Photo" />
+                                <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
                                 <div class="player-info">
                                     <h3>Ludovic Guitton</h3>
                                     <p>Pitcher / 3ème base / DH</p>
@@ -149,7 +153,8 @@ const HockeyCareerPage = () => {
 
 
             <section className="footer-banner">
-                <img src="/images/dallE20250205141532ASetOfIceHockeyEquipmentPlacedOnTheGroundIncludingAPairOfIceHockeySkatesAHockeyStickAndAHelmetTheSkatesAreSlightlyWornJpeg.jpg" alt="Hockey Skates" />
+                <img src="/images/dallE20250205141532ASetOfIceHockeyEquipmentPlacedOnTheGroundIncludingAPairOfIceHockeySkatesAHockeyStickAndAHelmetTheSkatesAreSlightlyWornJpeg.jpg"
+                 alt="Hockey Skates" />
             </section>
             <Footer />
 
