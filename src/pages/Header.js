@@ -4,9 +4,9 @@ import './../index.css';
 
 const Header = () => {
     return (    
-            <nav class="navbar">
-                <div class="navbar-container">
-                    <div class="logo">
+            <nav className="navbar">
+                <div className="navbar-container">
+                    <div className="logo">
                         <img src="/images/bcAgencyLogoJpg.jpg" alt="BC Agency Logo" />
                     </div>
                     <ul className="nav-links">

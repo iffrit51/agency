@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import Footer from './pages/Footer';
-import Header from './pages/Header';
+import Navbar from './pages/NavBar';
 
 const handleClick = (event) => {
     event.preventDefault();
@@ -10,7 +10,7 @@ const handleClick = (event) => {
 const HockeyCareerPage = () => {
     return (
         <div className="container">
-            <Header />
+            <Navbar />
             <header className="header">
                 <div className="overlay">
                     <h1>Building Careers, Not Just Contracts</h1>
@@ -61,18 +61,18 @@ const HockeyCareerPage = () => {
                 </div>
             </section>
 
-            <section class="carousel">
-                <div class="carousel-track">
-                    <div class="card">
-                        <div class="card-inner">
-                            <div class="card-front">
+            <section className="carousel">
+                <div className="carousel-track">
+                    <div className="card">
+                        <div className="card-inner">
+                            <div className="card-front">
                                 <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
-                                <div class="player-info">
+                                <div className="player-info">
                                     <h3>Ludovic Guitton</h3>
                                     <p>Pitcher / 3ème base / DH</p>
                                 </div>
                             </div>
-                            <div class="card-back">
+                            <div className="card-back">
                                 <h3>Stats</h3>
                                 <p>ERA: 2.45</p>
                                 <p>Strikeouts: 150</p>
@@ -80,16 +80,16 @@ const HockeyCareerPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-inner">
-                            <div class="card-front">
+                    <div className="card">
+                        <div className="card-inner">
+                            <div className="card-front">
                                 <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
-                                <div class="player-info">
+                                <div className="player-info">
                                     <h3>Ludovic Guitton</h3>
                                     <p>Pitcher / 3ème base / DH</p>
                                 </div>
                             </div>
-                            <div class="card-back">
+                            <div className="card-back">
                                 <h3>Stats</h3>
                                 <p>ERA: 2.45</p>
                                 <p>Strikeouts: 150</p>
@@ -97,16 +97,16 @@ const HockeyCareerPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-inner">
-                            <div class="card-front">
+                    <div className="card">
+                        <div className="card-inner">
+                            <div className="card-front">
                                 <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
-                                <div class="player-info">
+                                <div className="player-info">
                                     <h3>Ludovic Guitton</h3>
                                     <p>Pitcher / 3ème base / DH</p>
                                 </div>
                             </div>
-                            <div class="card-back">
+                            <div className="card-back">
                                 <h3>Stats</h3>
                                 <p>ERA: 2.45</p>
                                 <p>Strikeouts: 150</p>
@@ -114,16 +114,16 @@ const HockeyCareerPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-inner">
-                            <div class="card-front">
+                    <div className="card">
+                        <div className="card-inner">
+                            <div className="card-front">
                                 <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
-                                <div class="player-info">
+                                <div className="player-info">
                                     <h3>Ludovic Guitton</h3>
                                     <p>Pitcher / 3ème base / DH</p>
                                 </div>
                             </div>
-                            <div class="card-back">
+                            <div className="card-back">
                                 <h3>Stats</h3>
                                 <p>ERA: 2.45</p>
                                 <p>Strikeouts: 150</p>
@@ -131,16 +131,16 @@ const HockeyCareerPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-inner">
-                            <div class="card-front">
+                    <div className="card">
+                        <div className="card-inner">
+                            <div className="card-front">
                                 <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
-                                <div class="player-info">
+                                <div className="player-info">
                                     <h3>Ludovic Guitton</h3>
                                     <p>Pitcher / 3ème base / DH</p>
                                 </div>
                             </div>
-                            <div class="card-back">
+                            <div className="card-back">
                                 <h3>Stats</h3>
                                 <p>ERA: 2.45</p>
                                 <p>Strikeouts: 150</p>

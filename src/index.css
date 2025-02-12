@@ -469,7 +469,6 @@
   color: #000; 
 }
 
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -478,8 +477,6 @@
     transform: translateX(-calc(240px * 5)); 
   }
 }
-
-
 
 @media (max-width: 768px) {
   .services {

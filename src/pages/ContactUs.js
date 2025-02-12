@@ -1,12 +1,12 @@
 import React from 'react';
 import './ContactUs.css';
 import Footer from './Footer';
-import Header from './Header';
+import Navbar from './NavBar';
 
 const ContactUs = () => {
     return (
         <div className="contact-container">
-            <Header />
+            <Navbar />
             <div className="contact-header">
                 <h1>Contact us</h1>
                 <p>

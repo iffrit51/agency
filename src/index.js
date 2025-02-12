@@ -3,27 +3,14 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './index.css';
 import App from './App';
+import Navbar from './pages/NavBar';
 
 const handleClick = (event) => {
   event.preventDefault();
 };
 
 <div className="container">
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="logo">
-        <Link to="/">
-          <img src="/images/bcAgencyLogoJpg.jpg" alt="" />
-        </Link>
-      </div>
-      <ul className="nav-links">
-        <li><Link to="/about">ABOUT US</Link></li>
-        <li><Link to="/services">SERVICES</Link></li>
-        <li><Link to="/players">PLAYERS</Link></li>
-        <li><Link to="/contact">CONTACT US</Link></li>
-      </ul>
-    </div>
-  </nav>
+<Navbar />
   <header className="header">
     <div className="overlay">
       <h1>Building Careers, Not Just Contracts</h1>
@@ -75,18 +62,18 @@ const handleClick = (event) => {
     </div>
   </section>
 
-  <section class="carousel">
-    <div class="carousel-track">
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
+  <section className="carousel">
+    <div className="carousel-track">
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
             <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
-            <div class="player-info">
+            <div className="player-info">
               <h3>Ludovic Guitton</h3>
               <p>Pitcher / 3ème base / DH</p>
             </div>
           </div>
-          <div class="card-back">
+          <div className="card-back">
             <h3>Stats</h3>
             <p>ERA: 2.45</p>
             <p>Strikeouts: 150</p>
@@ -94,16 +81,16 @@ const handleClick = (event) => {
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
             <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
-            <div class="player-info">
+            <div className="player-info">
               <h3>Ludovic Guitton</h3>
               <p>Pitcher / 3ème base / DH</p>
             </div>
           </div>
-          <div class="card-back">
+          <div className="card-back">
             <h3>Stats</h3>
             <p>ERA: 2.45</p>
             <p>Strikeouts: 150</p>
@@ -111,16 +98,16 @@ const handleClick = (event) => {
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
             <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
-            <div class="player-info">
+            <div className="player-info">
               <h3>Ludovic Guitton</h3>
               <p>Pitcher / 3ème base / DH</p>
             </div>
           </div>
-          <div class="card-back">
+          <div className="card-back">
             <h3>Stats</h3>
             <p>ERA: 2.45</p>
             <p>Strikeouts: 150</p>
@@ -128,16 +115,16 @@ const handleClick = (event) => {
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
             <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
-            <div class="player-info">
+            <div className="player-info">
               <h3>Ludovic Guitton</h3>
               <p>Pitcher / 3ème base / DH</p>
             </div>
           </div>
-          <div class="card-back">
+          <div className="card-back">
             <h3>Stats</h3>
             <p>ERA: 2.45</p>
             <p>Strikeouts: 150</p>
@@ -145,16 +132,16 @@ const handleClick = (event) => {
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
+      <div className="card">
+        <div className="card-inner">
+          <div className="card-front">
             <img src="/images/nikoSuoraniemiJpg.jpg" alt="" />
-            <div class="player-info">
+            <div className="player-info">
               <h3>Ludovic Guitton</h3>
               <p>Pitcher / 3ème base / DH</p>
             </div>
           </div>
-          <div class="card-back">
+          <div className="card-back">
             <h3>Stats</h3>
             <p>ERA: 2.45</p>
             <p>Strikeouts: 150</p>
@@ -210,4 +197,3 @@ root.render(
     </Router>
   </React.StrictMode>
 );
-
