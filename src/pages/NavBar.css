@@ -1,60 +1,75 @@
+/* Styles de base */
 .navbar {
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    padding: 10px 50px;
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+  width: 100%;
+  background: #fff;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  margin-right: 30px;
+}
+
+/* Navigation Desktop */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* Bouton hamburger */
+.hamburger {
+  display: none; /* Caché par défaut sur grand écran */
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive : affichage du hamburger */
+@media (max-width: 768px) {
   .hamburger {
-    display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
+    display: block;
   }
-  
+
   .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 40px;
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
   }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: #555;
-    font-weight: bold;
+
+  .nav-links.show {
+    display: flex; /* Affiche le menu quand `show` est ajouté */
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .hamburger {
-      display: block;
-    }
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 70px;
-      right: 50px;
-      background-color: white;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      padding: 20px;
-    }
-  
-    .nav-links.show {
-      display: flex;
-    }
+
+  .nav-links li {
+    padding: 10px 0;
   }
-  
+}
