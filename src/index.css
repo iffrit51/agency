@@ -489,6 +489,7 @@
 @media (max-width: 768px) {
   .services {
     flex-direction: column;
+    margin-left: 20px;
   }
 
   .service-card {
@@ -504,21 +505,6 @@
     flex-direction: column;
   }
 } 
-
-/* Media Queries pour les écrans plus petits */
-/* @media (max-width: 768px) {
-  .about-images {
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  .about-images .img-1,
-  .about-images .img-2 {
-    width: 80%; 
-    position: static; 
-    margin-bottom: 20px; 
-  }
-} */
 
 @media (max-width: 768px) {
   .about-text {
