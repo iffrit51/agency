@@ -38,7 +38,7 @@ const Services = () => {
             <div className="services-section">
                 <h1>Nos Services</h1>
                 <p className="intro">
-                    En tant qu'agents de joueurs spécialisés dans le hockey sur glace et le baseball, nous offrons une gamme complète de services pour accompagner nos clients vers le succès.
+                    En tant qu'agents de joueurs spécialisés dans le hockey sur glace et lebaseball, nous offrons une gamme complète de services pour accompagner nos clients vers le succès.
                 </p>
                 <div className="services-container">
                     {servicesData.map((service, index) => (
