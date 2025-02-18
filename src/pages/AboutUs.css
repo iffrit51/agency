@@ -1,0 +1,42 @@
+.about-section {
+    padding: 20px;
+}
+
+.content {
+    overflow: hidden; /* Pour contenir les éléments flottants */
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.image-left {
+    float: left;
+    width: 25%;
+    margin-right: 20px;
+}
+
+.text-right {
+    overflow: hidden; /* Pour éviter que le texte n'entoure l'image */
+}
+
+.image-right {
+    float: right;
+    width: 25%;
+    margin-left: 20px;
+}
+
+.text-left {
+    overflow: hidden; /* Pour éviter que le texte n'entoure l'image */
+}
+
+@media (max-width: 768px) {
+    .image-left, .image-right {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+        width: 50%;
+    }
+
+    .text-right, .text-left {
+        text-align: center;
+    }
+}
