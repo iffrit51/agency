@@ -14,7 +14,7 @@ const playersData = [
     position: 'Entrâineur',
     imageFront: '/images/nikoSuoraniemiJpg.jpg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/1751/niko-suoraniemi',
-    countryCode: 'fi' // Code du drapeau finlandais
+    countryCodes: ['fi','se'] // Code du drapeau finlandais
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const playersData = [
     position: 'Ailier',
     imageFront: '/images/wehebeDargeJpg.jpg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/67936/wehebe-darge',
-    countryCode: 'au' // Code du drapeau australien
+    countryCodes: ['au'] // Code du drapeau australien
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const playersData = [
     position: 'Entraîneur',
     imageFront: '/images/JordanSteger.jpg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/159923/jordan-steger',
-    countryCode: 'us' // Code du drapeau américain
+    countryCodes: ['us'] // Code du drapeau américain
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const playersData = [
     position: 'Entraîneur',
     imageFront: '/images/JohanKampe.jpeg',
     eliteProspectsLink: 'https://www.eliteprospects.com/staff/2835/johan-kampe',
-    countryCode: 'se' // Code du drapeau suedois
+    countryCodes: ['se'] // Code du drapeau suedois
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const playersData = [
     position: 'Attaquant',
     imageFront: '/images/CaseyKubara.jpeg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/189983/casey-kubara',
-    countryCode: 'au' // Code du drapeau canadien
+    countryCodes: ['au','pl'] // Code du drapeau canadien
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ const playersData = [
     position: 'Attaquant',
     imageFront: '/images/HectorMajul.jpeg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/154463/hector-majul',
-    countryCode: 'mx' // Code du drapeau canadien
+    countryCodes: ['mx'] // Code du drapeau canadien
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ const playersData = [
     position: 'Défensseur',
     imageFront: '/images/EthanHawes.png',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/599777/ethan-hawes',
-    countryCode: 'au' // Code du drapeau australien
+    countryCodes: ['au','us'] // Code du drapeau australien
   },
   {
     id: 8,
@@ -84,7 +84,7 @@ const playersData = [
     position: 'Attaquant',
     imageFront: '/images/alexSmith.jpg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/11111/alex-smith',
-    countryCode: 'ca' // Code du drapeau canadien
+    countryCodes: ['ca'] // Code du drapeau canadien
   }
 ];
 
@@ -100,7 +100,11 @@ const PlayerCard = ({ player }) => {
           </div>
         </div>
         <div className="card-back centered">
-          <i className={`fi fi-${player.countryCode}`}></i>
+        <div className="flags">
+            {player.countryCodes.map(code => (
+              <i key={code} className={`fi fi-${code} flag-icon`}></i>
+            ))}
+          </div>
           <h3>Stats</h3>
           <p>Âge : {player.age}</p>
           <p>Poste : {player.position}</p>
