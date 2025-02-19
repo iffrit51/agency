@@ -90,7 +90,7 @@ const playersData = [
 
 const PlayerCard = ({ player }) => {
   return (
-    <div className="card">
+    <div className="card centered">
       <div className="card-inner">
         <div className="card-front">
           <img src={player.imageFront} alt={`${player.firstName} ${player.lastName}`} className="card-image" />
