@@ -14,7 +14,7 @@ const playersData = [
     position: 'Entraîneur',
     imageFront: '/images/nikoSuoraniemiJpg.jpg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/1751/niko-suoraniemi',
-    countryCodes: ['fi','se'] // Code du drapeau finlandais
+    countryCodes: ['fi', 'se'] // Code du drapeau finlandais
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ const playersData = [
     position: 'Centre',
     imageFront: '/images/CaseyKubara.jpeg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/189983/casey-kubara',
-    countryCodes: ['au','pl'] // Code du drapeau canadien
+    countryCodes: ['au', 'pl'] // Code du drapeau canadien
   },
   {
     id: 6,
@@ -74,7 +74,7 @@ const playersData = [
     position: 'Défenseur',
     imageFront: '/images/EthanHawes.png',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/599777/ethan-hawes',
-    countryCodes: ['au','us'] // Code du drapeau australien
+    countryCodes: ['au', 'us'] // Code du drapeau australien
   },
   {
     id: 8,
@@ -100,7 +100,7 @@ const PlayerCard = ({ player }) => {
           </div>
         </div>
         <div className="card-back centered">
-        <div className="flags">
+          <div className="flags">
             {player.countryCodes.map(code => (
               <i key={code} className={`fi fi-${code} flag-icon`}></i>
             ))}
@@ -114,7 +114,7 @@ const PlayerCard = ({ player }) => {
             className="info-button"
             onClick={() => window.open(player.eliteProspectsLink, '_blank')}
           >
-            + Info
+            Stats
           </Button>
         </div>
       </div>
