@@ -73,6 +73,7 @@ const HockeyCareerPage = () => {
                                 </div>
                             </div>
                             <div className="card-back">
+                                <p></p>
                                 <h3>Stats</h3>
                                 <p>ERA: 2.45</p>
                                 <p>Strikeouts: 150</p>
