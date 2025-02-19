@@ -11,7 +11,7 @@ const playersData = [
     firstName: 'Niko',
     lastName: 'Suoraniemi',
     age: 40,
-    position: 'Entrâineur',
+    position: 'Entraîneur',
     imageFront: '/images/nikoSuoraniemiJpg.jpg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/1751/niko-suoraniemi',
     countryCodes: ['fi','se'] // Code du drapeau finlandais
@@ -51,7 +51,7 @@ const playersData = [
     firstName: 'Casey',
     lastName: 'Kubara',
     age: 28,
-    position: 'Attaquant',
+    position: 'Centre',
     imageFront: '/images/CaseyKubara.jpeg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/189983/casey-kubara',
     countryCodes: ['au','pl'] // Code du drapeau canadien
@@ -71,7 +71,7 @@ const playersData = [
     firstName: 'Ethan',
     lastName: 'Hawes',
     age: 22,
-    position: 'Défensseur',
+    position: 'Défenseur',
     imageFront: '/images/EthanHawes.png',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/599777/ethan-hawes',
     countryCodes: ['au','us'] // Code du drapeau australien
