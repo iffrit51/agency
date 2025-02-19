@@ -60,3 +60,17 @@
 .info-button:hover {
     transform: scale(1.1);
 }
+
+/* Mode tablette : 2 cartes par ligne */
+@media (max-width: 1024px) {
+    .players-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mode mobile : 1 carte par ligne */
+@media (max-width: 640px) {
+    .players-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
