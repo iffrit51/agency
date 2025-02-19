@@ -3,6 +3,7 @@ import Footer from './Footer';
 import Navbar from './NavBar';
 import 'flag-icons/css/flag-icons.min.css';
 import { Button } from '@mui/material';
+import './Player.css'; // Si tu as des styles spécifiques
 
 const playersData = [
   {
@@ -24,50 +25,92 @@ const playersData = [
     imageFront: '/images/wehebeDargeJpg.jpg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/67936/wehebe-darge',
     countryCode: 'au' // Code du drapeau australien
+  },
+  {
+    id: 3,
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+    position: 'Gardien',
+    imageFront: '/images/wehebeDargeJpg.jpg',
+    eliteProspectsLink: 'https://www.eliteprospects.com/player/00000/john-doe',
+    countryCode: 'us' // Code du drapeau américain
+  },
+  {
+    id: 4,
+    firstName: 'Alex',
+    lastName: 'Smith',
+    age: 27,
+    position: 'Attaquant',
+    imageFront: '/images/alexSmith.jpg',
+    eliteProspectsLink: 'https://www.eliteprospects.com/player/11111/alex-smith',
+    countryCode: 'ca' // Code du drapeau canadien
+  },
+  {
+    id: 5,
+    firstName: 'Tyler',
+    lastName: 'Kubara',
+    age: 27,
+    position: 'Attaquant',
+    imageFront: '/images/alexSmith.jpg',
+    eliteProspectsLink: 'https://www.eliteprospects.com/player/11111/alex-smith',
+    countryCode: 'ca' // Code du drapeau canadien
+  },
+  {
+    id: 6,
+    firstName: 'Hector',
+    lastName: 'Majul',
+    age: 27,
+    position: 'Attaquant',
+    imageFront: '/images/alexSmith.jpg',
+    eliteProspectsLink: 'https://www.eliteprospects.com/player/11111/alex-smith',
+    countryCode: 'ca' // Code du drapeau canadien
+  },
+  {
+    id: 7,
+    firstName: 'Ethan',
+    lastName: 'Hawes',
+    age: 27,
+    position: 'Attaquant',
+    imageFront: '/images/alexSmith.jpg',
+    eliteProspectsLink: 'https://www.eliteprospects.com/player/11111/alex-smith',
+    countryCode: 'ca' // Code du drapeau canadien
+  },
+  {
+    id: 8,
+    firstName: 'Just',
+    lastName: 'Castor',
+    age: 27,
+    position: 'Attaquant',
+    imageFront: '/images/alexSmith.jpg',
+    eliteProspectsLink: 'https://www.eliteprospects.com/player/11111/alex-smith',
+    countryCode: 'ca' // Code du drapeau canadien
   }
 ];
 
 const PlayerCard = ({ player }) => {
   return (
-    <div className="card" style={{ width: '20%',marginTop: '100px',marginBottom: '100px' }}>
+    <div className="card">
       <div className="card-inner">
-        {/* Face avant */}
         <div className="card-front">
-          <img
-            src={player.imageFront}
-            alt={`${player.firstName} ${player.lastName}`}
-            className="w-full object-cover"
-            style={{ maxHeight: '300px' }}
-          />
-          <div className="player-info text-center mt-2">
-            <h3 className="font-bold">{player.firstName} {player.lastName}</h3>
+          <img src={player.imageFront} alt={`${player.firstName} ${player.lastName}`} className="card-image" />
+          <div className="player-info">
+            <h3>{player.firstName} {player.lastName}</h3>
             <p>{player.position}</p>
           </div>
         </div>
-        {/* Face arrière */}
-        <div className="card-back bg-gray-900 text-white flex flex-col items-center justify-center p-4">
-          <i className={`fi fi-${player.countryCode} text-2xl mb-2`}></i>
-          <h3 className="text-lg font-bold">Stats</h3>
+        <div className="card-back">
+          <i className={`fi fi-${player.countryCode}`}></i>
+          <h3>Stats</h3>
           <p>Âge : {player.age}</p>
           <p>Poste : {player.position}</p>
           <Button
             variant="contained"
             color="primary"
-            style={{ 
-              marginTop: '10px',
-              background: 'linear-gradient(to right, #ff512f, #dd2476)',
-              color: 'white',
-              padding: '10px 20px',
-              borderRadius: '8px',
-              fontWeight: 'bold',
-              boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
-              transition: 'transform 0.2s ease-in-out'
-            }}
-            onMouseOver={(e) => e.target.style.transform = 'scale(1.1)'}
-            onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
+            className="info-button"
             onClick={() => window.open(player.eliteProspectsLink, '_blank')}
           >
-            Stats
+            + Info
           </Button>
         </div>
       </div>
@@ -77,9 +120,9 @@ const PlayerCard = ({ player }) => {
 
 const Players = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="container">
       <Navbar />
-      <div className="flex flex-wrap justify-center gap-4 p-10" style={{ width: '80%', margin: '0 auto' }}>
+      <div className="players-grid">
         {playersData.map(player => (
           <PlayerCard key={player.id} player={player} />
         ))}
