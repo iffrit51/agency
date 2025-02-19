@@ -21,8 +21,8 @@ const HockeyCareerPage = () => {
 
             <section className="about-us">
                 <div className="about-images">
-                    <img src="/images/austinDistelWD1LRb9OeEoUnsplashJpg.Jpg" alt="Team Meeting" className="img-1" />
-                    <img src="/images/brookeCagleUHvRvDr7PgUnsplashJpg.jpg" alt="Discussion" className="img-2" />
+                    <img src="/images/Austin.Jpg" alt="Team Meeting" className="img-1" />
+                    <img src="/images/brooke.jpg" alt="Discussion" className="img-2" />
                 </div>
                 <div className="about-text">
                     <h2>About us</h2>
@@ -154,7 +154,7 @@ const HockeyCareerPage = () => {
 
 
             <section className="footer-banner">
-                <img src="/images/dallE20250205141532ASetOfIceHockeyEquipmentPlacedOnTheGroundIncludingAPairOfIceHockeySkatesAHockeyStickAndAHelmetTheSkatesAreSlightlyWornJpeg.jpg"
+                <img src="/images/Patins.jpg"
                  alt="Hockey Skates" />
             </section>
             <Footer />
