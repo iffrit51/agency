@@ -18,8 +18,8 @@ const AboutUs = () => {
                 <div className="content">
                     <img src="team3Jpg3" alt="Walter Tesonne" className="image-right" />
                     <div className="text-left">
-                        <h2>À propos de Walter Tesonne</h2>
-                        <p>Walter Tesonne, mon assistant, joue un rôle crucial en aidant nos joueurs à atteindre leur plein potentiel grâce à son expertise et son dévouement.</p>
+                        <h2>À propos de mon assistant</h2>
+                        <p>Mon assistant, joue un rôle crucial en aidant nos joueurs à atteindre leur plein potentiel grâce à son expertise et son dévouement.</p>
                     </div>
                 </div>
             </div>
