@@ -75,16 +75,6 @@ const playersData = [
     imageFront: '/images/EthanHawes.png',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/599777/ethan-hawes',
     countryCodes: ['au', 'us'] // Code du drapeau australien
-  },
-  {
-    id: 8,
-    firstName: 'Just',
-    lastName: 'Castor',
-    age: 27,
-    position: 'Attaquant',
-    imageFront: '/images/alexSmith.jpg',
-    eliteProspectsLink: 'https://www.eliteprospects.com/player/11111/alex-smith',
-    countryCodes: ['ca'] // Code du drapeau canadien
   }
 ];
 
