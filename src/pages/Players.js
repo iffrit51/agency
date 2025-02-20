@@ -10,7 +10,7 @@ const playersData = [
     id: 1,
     firstName: 'Niko',
     lastName: 'Suoraniemi',
-    age: 40,
+    birthDate: '1984-02-15',
     position: 'Entraîneur',
     imageFront: '/images/nikoSuoraniemiJpg.jpg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/1751/niko-suoraniemi',
@@ -20,7 +20,7 @@ const playersData = [
     id: 2,
     firstName: 'Wehebe',
     lastName: 'Darge',
-    age: 33,
+    birthDate: '1991-06-10',
     position: 'Ailier',
     imageFront: '/images/wehebeDargeJpg.jpg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/67936/wehebe-darge',
@@ -30,7 +30,7 @@ const playersData = [
     id: 3,
     firstName: 'Jordan',
     lastName: 'Steger',
-    age: 34,
+    birthDate: '1990-09-25',
     position: 'Entraîneur',
     imageFront: '/images/JordanSteger.jpg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/159923/jordan-steger',
@@ -40,7 +40,7 @@ const playersData = [
     id: 4,
     firstName: 'Johan',
     lastName: 'Kämpe',
-    age: 52,
+    birthDate: '1972-04-18',
     position: 'Entraîneur',
     imageFront: '/images/JohanKampe.jpeg',
     eliteProspectsLink: 'https://www.eliteprospects.com/staff/2835/johan-kampe',
@@ -50,7 +50,7 @@ const playersData = [
     id: 5,
     firstName: 'Casey',
     lastName: 'Kubara',
-    age: 28,
+    birthDate: '1996-04-06',
     position: 'Centre',
     imageFront: '/images/CaseyKubara.jpeg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/189983/casey-kubara',
@@ -60,7 +60,7 @@ const playersData = [
     id: 6,
     firstName: 'Hector',
     lastName: 'Majul',
-    age: 27,
+    birthDate: '1994-05-07',
     position: 'Attaquant',
     imageFront: '/images/HectorMajul.jpeg',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/154463/hector-majul',
@@ -70,13 +70,24 @@ const playersData = [
     id: 7,
     firstName: 'Ethan',
     lastName: 'Hawes',
-    age: 22,
+    birthDate: '2002-03-24',
     position: 'Défenseur',
     imageFront: '/images/EthanHawes.png',
     eliteProspectsLink: 'https://www.eliteprospects.com/player/599777/ethan-hawes',
     countryCodes: ['au', 'us'] // Code du drapeau australien
   }
 ];
+
+const calculateAge = (birthDate) => {
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  const monthDiff = today.getMonth() - birth.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+    age--;
+  }
+  return age;
+};
 
 const PlayerCard = ({ player }) => {
   return (
@@ -96,7 +107,7 @@ const PlayerCard = ({ player }) => {
             ))}
           </div>
           <h3>Stats</h3>
-          <p>Âge : {player.age}</p>
+          <p>Âge : {calculateAge(player.birthDate)}</p>
           <p>Poste : {player.position}</p>
           <Button
             variant="contained"
